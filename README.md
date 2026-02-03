@@ -1,7 +1,8 @@
 # SOP
-Code to generate Sobolev orthonormal polynomials:
-1) Arnoldi iteration
-2) Updating procedure
+## General purpose code:
+General purpose code to generate Sobolev orthonormal polynomials as described in [1]:
+1) Arnoldi iteration 'Arnoldi.m'
+2) Updating procedure 'updating.m'
 
 The modified Chebyshev method and discretized Stieltjes procedure, together with code to generate quadrature rules can be found on the webpage of Walter Gautschi: https://www.cs.purdue.edu/archives/2002/wxg/codes/OPQ.html
 
@@ -13,3 +14,12 @@ To run this code the following functions are required (available on https://www.
 - 'r_jacobi.m'
 - 'r_laguerre.m'
 - 'sobzeros.m'
+
+## Specialized code:
+Folder 'GegenbauerSobolev/' contains specialized code to generate Gegenbauer-Sobolev orthogonal polynomials [2]
+
+
+
+## Bibliography
+[1] Van Buggenhout, N. On generating Sobolev orthogonal polynomials. Numer. Math. 155, 415–443 (2023). https://doi.org/10.1007/s00211-023-01379-3
+[2] Paper in progress: Recurrence relations and zeros of Gegenbauer-Sobolev orthogonal polynomials
