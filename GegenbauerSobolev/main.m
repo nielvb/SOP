@@ -1,13 +1,16 @@
 % Example of usage of the code to generate Gegenbauer-Sobolev polynomials
 
 %% Set parameters
-mu = 1/2; % Gegenbauer parameter
-lambda = 1; % Parameter weighing the contribution of the integral over derivatives
-N = 20; % Degree of Gegenbauer-Sobolev polynomial
+mu = 2; % Gegenbauer parameter
+lambda = 10; % Parameter weighing the contribution of the integral over derivatives
+N = 100; % Degree of Gegenbauer-Sobolev polynomial
 
 %% Compute recurrence relation
 [H,B,JB] = GegSob_generate(N,mu,lambda); % Computes the recurrence matrix H and pencil (JB,B)
 
+alphas = computeAlpha(N-2,mu,lambda);
+alphas_pert = computeAlpha_pert(N-2,mu,lambda,2,eps);
+norm(alphas-alphas_pert)
 %% Compute zeros
 [X,GegSobzeros,Y] = eig(JB,B);
 GegSobzeros = diag(GegSobzeros);
