@@ -4,16 +4,20 @@ function[iterj1,x1,conv1]=Comput_zeros_LagSob_mp(n,alpha,lambda,tol,ndigit)
 % by using the four term recurrence relation 
 %in multiple precision with Advanpix LLC. Multiprecision Computing Toolbox for Matlab.
 %
-% input: n: the degree of the polynomial
-%        alpha: the Laguerre parameter
-%        lambda: the parameter of the Lagierre-Sobolev inner product
-%        tol: the required tolerance
-%        ndigit: number of digit in multiple precision
+%INPUT
+%       n = the degree of the polynomial
+%       alpha = the Laguerre parameter
+%       lambda = the parameter of the Lagierre-Sobolev inner product
+%       tol = the required tolerance
+%       ndigit = number of digit in multiple precision
 %
-% output:  iterj: vector with the required number of iteration per each zero
-%              x1: vector of zeros
-%          conv1: vector with entries equal to 0 if convergence occurs, 1
-%          if it not converges in 30 iterations^
+%OUTPUT  
+%       iterj = vector with the required number of iteration per each zero
+%       x1 = vector of zeros
+%       conv1 = vector with entries equal to 0 if convergence occurs, 1
+%                 if it not converges in 30 iterations^
+%
+%Author: Nicola Mastronardi (2026)
 
 path_to_advanpix = '';
 if isempty(path_to_advanpix)

@@ -19,7 +19,8 @@ function [x2,iterj,x4,TT] = Laguerre_Sobolev_zeros_NA25F(n,alpha,lambda,tol)
 %       x4 = zeros computed as the generlized eigenvlued =s of the
 %            balanced problem
 %       TT = execution time of both methods
-
+%
+%Author: Nicola Mastronardi (2026)
 
 med11=[];
 med00=[];
@@ -170,11 +171,10 @@ function [d,d1,beta,gamma,delta,B,H] = recurrence_Laguerre_Sobolev(n,alpha,lambd
 % computation of the four term recurrence relation coefficients
 % associated to Laguerre-Sobolev polynomials
 %
-% Input:
-% n, degree of the Laguerre-Sobolev polynomial
-% alpha, parameter characterizing the Laguerre-Sobolev polynomials : 
-% $e^{-x} x^{\alpha}$
-% lambda, parameter charachterizing the Sobloev inner product
+%INPUT
+%   n = degree of the Laguerre-Sobolev polynomial
+%   alpha = parameter characterizing Laguerre-Sobolev polynomials: $e^{-x} x^{\alpha}$
+%   lambda = parameter charachterizing the Sobolev inner product
 
 beta=zeros(n,1);
 gamma=zeros(n-1,1);

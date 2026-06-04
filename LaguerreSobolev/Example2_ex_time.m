@@ -2,6 +2,8 @@
 %   This figure compares the execution time of three methods.
 % Paper: T. Laudadio, N. Mastronardi, F. Marcell\'an, N. Van Buggenhout,  P. Van Dooren,
 % On computing the zeros of Laguerre-Sobolev polynomials, Numer. Algorithms 100 (2025), 1507--1526.
+%
+%Author: Nicola Mastronardi (2026)
 
 clear all
 close all

@@ -16,12 +16,11 @@ function[iterj1,x1,conv1]=Comput_zeros_LagSobF(n,alpha,lambda,tol)
 %       x1 = vector of zeros
 %       conv1 = vector with entries equal to 0 if convergence occurs, 1
 %          if it does not converge in 30 iterations
-
+%
+%Author: Nicola Mastronardi (2026)
 
 %%%%%%%%%%%%%
  
-
-
 [g2F,z,a1,b1,mu1]=gaussq(6,n,alpha,alpha,0,0);
 
 for i=1:n-1
@@ -35,16 +34,18 @@ z(1)=g2F(1)/2;
 function [iterj,x,conv1] = EA_method_F(n,x,alpha,lambda,tol)
 % Ehrlich–Aberth Method for computing the 
 % zeros  of Laguerre-Sobolev polynomials
-% input: n: the degree of the polynomial
-%        x: vector of the initial approximation of the zeros
-%        alpha: the Laguerre parameter
-%        lambda: the parameter of the Lagierre-Sobolev inner product
-%        tol: the required tolerance
+%INPUT 
+%       n = the degree of the polynomial
+%       x = vector of the initial approximation of the zeros
+%       alpha = the Laguerre parameter
+%       lambda = the parameter of the Lagierre-Sobolev inner product
+%       tol = the required tolerance
 %
-% output:  iterj: vector with the required number of iteration per each zero
-%              x: vector of zeros
-%          conv1: vector with entries equal to 0 if convergence occurs, 1
-%          if it not converges in 30 iterations
+%OUTPUT
+%       iterj = vector with the required number of iteration per each zero
+%       x = vector of zeros
+%       conv1 = vector with entries equal to 0 if convergence occurs, 1
+%               if it not converges in 30 iterations
 
 x0=x;
 X=[];
@@ -86,15 +87,14 @@ end
 function [QN] = poly_LagueSob_ratioN(n,alpha,lambda,x)
 % Computation of the ratio Q_n(x)/Q'_n(x) in x
 % Q_n(x) Laguerre-Sobolev polynomials
-% input: n: the degree of the polynomial
-%        alpha: the Laguerre parameter
-%        lambda: the parameter of the Lagierre-Sobolev inner product
-%        x: point in which the ratio is computed
+%INPUT
+%       n = the degree of the polynomial
+%       alpha = the Laguerre parameter
+%       lambda = the parameter of the Lagierre-Sobolev inner product
+%       x = point in which the ratio is computed
 %
-% output:  QN: the value of the  ratio Q_n(x)/Q'_n(x)   
-
-
-
+%OUTPUT  
+%       QN = the value of the  ratio Q_n(x)/Q'_n(x)   
         for i =2:n+1
             beta1(i)=2*(i-1)+alpha+1;
             gamma1(i)=(i-1)*((i-1)+alpha);
@@ -130,5 +130,3 @@ function [QN] = poly_LagueSob_ratioN(n,alpha,lambda,x)
         for i=2:n
             QN(i)=N(i)*((1+i*M(i))/(1+i*D(i)))*((1+d(i)*S(i))/(1+d(i)*K(i)));
         end
-
-   

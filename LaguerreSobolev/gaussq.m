@@ -33,7 +33,6 @@ z=z.^2*mu1;
 
 
  function[d,e,z,ierr]= gausq2(n, d, e)
-
 %
 %     this subroutine is a translation of an algol procedure,
 %     num. math. 12, 377-383(1968) by martin and wilkinson,
