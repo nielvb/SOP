@@ -32,5 +32,5 @@ Folder 'LaguerreSobolev/' contains specialized code to compute the zeros of Lagu
 ## Bibliography
 [1] Van Buggenhout, N. "On generating Sobolev orthogonal polynomials" Numer Math 155, 415–443 (2023). https://doi.org/10.1007/s00211-023-01379-3 \
 [2] Van Buggenhout, N., Laudadio, T., Mastronardi, N. et al. "Recurrence relations and zeros of Gegenbauer–Sobolev orthogonal polynomials". Adv Comput Math 52, 63 (2026). https://doi.org/10.1007/s10444-026-10338-z \
-[3] Laudadio, T., Mastronardi, N., Marcellán Español, F.J. et al. "On computing the zeros of Laguerre–Sobolev polynomials". Numer Algor 100, 1507–1526 (2025). https://doi.org/10.1007/s11075-025-02021-z
+[3] Laudadio, T., Mastronardi, N., Marcellán Español, F.J. et al. "On computing the zeros of Laguerre–Sobolev polynomials". Numer Algor 100, 1507–1526 (2025). https://doi.org/10.1007/s11075-025-02021-z \
 [4] Laudadio, T., Marcellán, F., Mastronardi, N. et al. "Computation of the zeros of Laguerre–Sobolev polynomials by the Ehrlich–Aberth method". (2026) Submitted
